@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "300655271284",
+    "project_id": "fitip-8d821",
+    "storage_bucket": "fitip-8d821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300655271284:android:e4e5cb7382ade21674e021",
+        "android_client_info": {
+          "package_name": "com.example.fitip10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300655271284-rjuvhsqhg7amk9r3jln9dkf9g19jq691.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitip10",
+            "certificate_hash": "ce3131f9f4e49910957a7d632fb05fa837767f26"
+          }
+        },
+        {
+          "client_id": "300655271284-9qo88t3cntja9pi2mui25v8cbgnjajgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT9_MQF-NP6KCw2zvLBAxjreOJvbJxSYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300655271284-9qo88t3cntja9pi2mui25v8cbgnjajgk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
