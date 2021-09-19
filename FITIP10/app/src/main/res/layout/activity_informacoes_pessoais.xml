@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color"
+    tools:context=".InformacoesPessoais">
+
+    <EditText
+        android:id="@+id/edit_endereco_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#0C0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/button_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_telefone_info" />
+
+    <EditText
+        android:id="@+id/edit_telefone_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="#040303"
+        app:layout_constraintBottom_toTopOf="@+id/edit_endereco_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_sobrenome_info2" />
+
+    <EditText
+        android:id="@+id/edit_sobrenome_info2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Sobrenome "
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/edit_telefone_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nome_info" />
+
+    <EditText
+        android:id="@+id/edit_nome_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Nome "
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/edit_sobrenome_info2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="51dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_endereco_info" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="93dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nome_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imginfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

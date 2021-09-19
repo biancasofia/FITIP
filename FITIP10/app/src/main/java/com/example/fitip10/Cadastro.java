@@ -79,7 +79,7 @@ public class Cadastro extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    abrirTelaPrincipal();
+                                    abrirTelaInfo();
                                 }
                                 else{
                                     String error = task.getException().getMessage();
@@ -108,6 +108,11 @@ public class Cadastro extends AppCompatActivity {
 
     private void abrirTelaPrincipal() {
         Intent intent = new Intent(Cadastro.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    private void abrirTelaInfo() {
+        Intent intent = new Intent(Cadastro.this, InformacoesPessoais.class);
         startActivity(intent);
         finish();
     }
