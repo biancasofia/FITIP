@@ -31,6 +31,7 @@ public class Login extends AppCompatActivity {
     private ProgressBar loginProgressBar;
     private Button btn_registrar;
     private Button btn_login;
+    private Button btn_registrar_professor;
     private FirebaseAuth mAuth;
 
     @Override
@@ -45,6 +46,7 @@ public class Login extends AppCompatActivity {
         loginProgressBar = findViewById(R.id.loginProgressBar);
         btn_login = findViewById(R.id.btn_login);
         btn_registrar = findViewById(R.id.btn_registrar);
+        btn_registrar_professor = findViewById(R.id.btn_registrar_professor);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +82,14 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        btn_registrar_professor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, CadastroProfessor.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         ckb_mostrar_senha.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

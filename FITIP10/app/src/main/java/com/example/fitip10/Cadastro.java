@@ -32,6 +32,7 @@ public class Cadastro extends AppCompatActivity {
     private ProgressBar loginProgressBar_register;
     private Button btn_button_registrar;
     private Button btn_button_fazer_login;
+    private Button btn_voltar_registrar;
     private FirebaseAuth mAuth;
 
 
@@ -48,6 +49,7 @@ public class Cadastro extends AppCompatActivity {
         ckb_mostrar_senha = findViewById(R.id.ckb_mostrar_senha);
         btn_button_registrar = findViewById(R.id.btn_button_registrar);
         btn_button_fazer_login = findViewById(R.id.btn_button_fazer_login);
+      //  btn_voltar_registrar = findViewById(R.id.btn_voltar_registrar);
         loginProgressBar_register = findViewById(R.id.loginProgressBar_register);
 
         ckb_mostrar_senha.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -96,6 +98,15 @@ public class Cadastro extends AppCompatActivity {
         });
 
         btn_button_fazer_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Cadastro.this, Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btn_voltar_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Cadastro.this, Login.class);
