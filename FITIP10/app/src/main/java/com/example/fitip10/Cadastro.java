@@ -105,15 +105,7 @@ public class Cadastro extends AppCompatActivity {
                 finish();
             }
         });
-
-        btn_voltar_registrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Cadastro.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+        
 
     }
 
