@@ -16,8 +16,10 @@
         <entry key="app/src/main/res/layout/activity_informacoes_pessoais.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/activity_informacoes_pessoais_professor.xml" value="0.3405128205128205" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_login_professor.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/activity_professor.xml" value="0.3405128205128205" />
+        <entry key="app/src/main/res/layout/activity_teste.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.3458333333333333" />

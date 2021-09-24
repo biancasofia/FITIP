@@ -110,7 +110,7 @@ public class CadastroProfessor extends AppCompatActivity {
         btn_button_fazer_login_professor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CadastroProfessor.this, Login.class);
+                Intent intent = new Intent(CadastroProfessor.this, LoginProfessor.class);
                 startActivity(intent);
                 finish();
             }
