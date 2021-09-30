@@ -49,6 +49,7 @@ public class Login extends AppCompatActivity {
         btn_registrar_professor = findViewById(R.id.btn_registrar_professor);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 String loginEmail = edt_email_login.getText().toString();
@@ -61,6 +62,9 @@ public class Login extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                                     if(task.isSuccessful()){
+
+
+
                                         abrirTelaPrincipal();
                                     }else{
                                         String error = task.getException().getMessage();

@@ -42,6 +42,8 @@ public class CadastroProfessor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_professor);
 
+
+
         mAuth = FirebaseAuth.getInstance();
 
         edt_email_register_professor = findViewById(R.id.edt_email_register_professor);
@@ -130,6 +132,8 @@ public class CadastroProfessor extends AppCompatActivity {
     private void abrirTelaProfessor() {
         Intent intent = new Intent(CadastroProfessor.this, Professor.class);
         startActivity(intent);
+
+
         finish();
     }
     private void abrirTelaInfoProfessor(){
