@@ -17,6 +17,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,6 +35,7 @@ public class Login extends AppCompatActivity {
     private Button btn_login;
     private Button btn_registrar_professor;
     private FirebaseAuth mAuth;
+    private Button btn_esqueciSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,7 @@ public class Login extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_login);
         btn_registrar = findViewById(R.id.btn_registrar);
         btn_registrar_professor = findViewById(R.id.btn_registrar_professor);
+        btn_esqueciSenha= findViewById(R.id.senhaPerdida_button);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
 
@@ -86,6 +90,14 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        btn_esqueciSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                recuperarSenha();
+            }
+        });
+
+
         btn_registrar_professor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,6 +117,35 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void recuperarSenha(){
+
+        String email= edt_email_login.getText().toString().trim();
+        if(email.isEmpty()){
+            Toast.makeText(getBaseContext(), "Insira seu E-mail para poder recuperar", Toast.LENGTH_LONG).show();
+        }
+        else{
+            enviarEmail(email);
+        }
+
+
+    }
+    private void enviarEmail(String email){
+        mAuth.sendPasswordResetEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(getBaseContext(), "Enviamos uma mensagem para o seu email com um link para redefinir senha", Toast.LENGTH_LONG).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getBaseContext(), "Erro ao enviar Email, escreva um E-mail cadastrado", Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+
     }
 
     private void abrirTelaPrincipal() {

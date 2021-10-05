@@ -9,6 +9,21 @@
     tools:context=".Login">
 
 
+    <Button
+        android:id="@+id/senhaPerdida_button"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="@color/white"
+        android:text="Esqueci minha senha"
+        android:textColor="#090606"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ckb_mostrar_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edt_senha_login" />
+
     <EditText
         android:id="@+id/edt_email_login"
         android:layout_width="0dp"
@@ -23,7 +38,6 @@
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/edt_senha_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginProgressBar" />
 
@@ -33,51 +47,52 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
         android:layout_marginEnd="11dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:drawableRight="@android:drawable/ic_lock_idle_lock"
         android:hint="Senha"
         android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/ckb_mostrar_senha"
+        app:layout_constraintBottom_toTopOf="@+id/senhaPerdida_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_email_login" />
 
     <CheckBox
         android:id="@+id/ckb_mostrar_senha"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
         android:buttonTint="@color/black"
         android:text="Mostrar senha"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toStartOf="@+id/senhaPerdida_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_senha_login" />
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="344dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="17dp"
+        android:layout_width="345dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="12dp"
         android:background="@color/purple_700"
         android:backgroundTint="@color/purple_500"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/btn_registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ckb_mostrar_senha" />
+        app:layout_constraintTop_toBottomOf="@+id/senhaPerdida_button" />
 
     <Button
         android:id="@+id/btn_registrar"
-        android:layout_width="340dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_width="345dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
         android:layout_marginBottom="21dp"
         android:background="@color/purple_700"
         android:backgroundTint="@color/purple_500"
@@ -89,11 +104,11 @@
 
     <Button
         android:id="@+id/btn_registrar_professor"
-        android:layout_width="342dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="29dp"
+        android:layout_width="345dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="28dp"
         android:background="@color/purple_700"
         android:backgroundTint="@color/purple_500"
         android:text="Sou Professor"
@@ -106,10 +121,10 @@
         android:id="@+id/loginProgressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="387dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="23dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="22dp"
         android:indeterminate="true"
         android:indeterminateTint="@color/black"
         android:visibility="invisible"
