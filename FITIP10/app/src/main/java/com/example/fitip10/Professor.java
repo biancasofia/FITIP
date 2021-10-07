@@ -43,10 +43,8 @@ public class Professor extends AppCompatActivity {
 
 
         if(  item.getItemId()==R.id.cadastro_treino){
-            Intent intent = new Intent(this, EdicaoDados.class);
+            Intent intent = new Intent(this, Treinos.class);
             startActivity(intent);
-
-
         }
 
         return super.onOptionsItemSelected(item);
