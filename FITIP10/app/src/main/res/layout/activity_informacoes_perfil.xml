@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/color"
-    tools:context=".Professor">
+    tools:context=".InformacoesPerfil">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -14,6 +14,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="387dp"
+        app:layout_constraintBottom_toTopOf="@+id/texttelefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,12 +31,12 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textnomeprof"
-        app:layout_constraintEnd_toEndOf="@+id/textnomeprof"
+        app:layout_constraintBottom_toTopOf="@+id/textnome"
+        app:layout_constraintEnd_toEndOf="@+id/textnome"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <TextView
-        android:id="@+id/textnomeprof"
+        android:id="@+id/textnome"
         android:layout_width="222dp"
         android:layout_height="42dp"
         android:layout_marginStart="30dp"
@@ -42,7 +44,7 @@
         android:layout_marginBottom="16dp"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textsobrenomeprof"
+        app:layout_constraintBottom_toTopOf="@+id/textsobrenome"
         app:layout_constraintEnd_toStartOf="@+id/imageView10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -56,50 +58,51 @@
         android:src="@drawable/nome"
         app:layout_constraintBottom_toTopOf="@+id/imageView11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textnomeprof"
+        app:layout_constraintStart_toEndOf="@+id/textnome"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <TextView
-        android:id="@+id/textsobrenomeprof"
+        android:id="@+id/textsobrenome"
         android:layout_width="222dp"
         android:layout_height="42dp"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="19dp"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textemailprof"
-        app:layout_constraintEnd_toEndOf="@+id/textemailprof"
+        app:layout_constraintBottom_toTopOf="@+id/textemail"
+        app:layout_constraintEnd_toEndOf="@+id/textemail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textnomeprof"
-        app:layout_constraintTop_toBottomOf="@+id/textnomeprof" />
+        app:layout_constraintStart_toStartOf="@+id/textnome"
+        app:layout_constraintTop_toBottomOf="@+id/textnome" />
 
     <TextView
-        android:id="@+id/textemailprof"
+        android:id="@+id/textemail"
         android:layout_width="222dp"
         android:layout_height="49dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="470dp"
         android:layout_marginBottom="14dp"
         android:textColor="@color/black"
         android:textSize="19sp"
-        app:layout_constraintBottom_toTopOf="@+id/textcofef"
+        app:layout_constraintBottom_toTopOf="@+id/textendereco"
+        app:layout_constraintEnd_toStartOf="@+id/texttelefone"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textsobrenomeprof" />
+        app:layout_constraintTop_toBottomOf="@+id/textsobrenome" />
 
     <TextView
-        android:id="@+id/textcofef"
+        android:id="@+id/textendereco"
         android:layout_width="222dp"
         android:layout_height="42dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="27dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="11dp"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/texttelefone"
         app:layout_constraintEnd_toStartOf="@+id/imageView11"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textemailprof" />
+        app:layout_constraintTop_toBottomOf="@+id/textemail" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -110,6 +113,19 @@
         android:src="@drawable/telefone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toEndOf="@+id/texttelefone"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
+    <TextView
+        android:id="@+id/texttelefone"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textnome"
+        app:layout_constraintStart_toStartOf="@+id/textnome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

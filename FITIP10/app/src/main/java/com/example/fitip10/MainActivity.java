@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -69,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        if(  item.getItemId()==R.id.navigation_chat){
-            //   Intent intent = new Intent(this, ActivityCadastroVacina.class);
-            // startActivity(intent);
+        if(  item.getItemId()==R.id.navigation_info_perfil){
+            Intent intent = new Intent(this, InformacoesPerfil.class);
+            startActivity(intent);
         }
 
         if(item.getItemId()==R.id.navigation_sair){

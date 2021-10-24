@@ -7,9 +7,9 @@
         android:title="Atualizar Dados Pessoais" />
 
     <item
-        android:id="@+id/navigation_chat"
+        android:id="@+id/navigation_info_perfil"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Chat" />
+        android:title="Meu perfil" />
 
     <item
         android:id="@+id/navigation_excluir"

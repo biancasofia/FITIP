@@ -7,4 +7,14 @@
         android:id="@+id/cadastro_treino"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Cadastrar treino" />
+
+    <item
+        android:id="@+id/perfil_professor"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Meu Perfil" />
+
+    <item
+        android:id="@+id/sair_professor"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Sair" />
 </menu>

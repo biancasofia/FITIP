@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FITIP10">
         <activity
+            android:name=".InformacoesPerfilProfessor"
+            android:exported="false" />
+        <activity
+            android:name=".InformacoesPerfil"
+            android:exported="false" />
+        <activity
             android:name=".Treinos"
             android:exported="true" />
         <activity
