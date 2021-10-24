@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FITIP10">
         <activity
-            android:name=".InformacoesPerfilProfessor"
+            android:name=".InfoAcad"
             android:exported="false" />
         <activity
             android:name=".InformacoesPerfil"

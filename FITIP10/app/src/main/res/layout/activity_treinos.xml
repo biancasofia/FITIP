@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_treino" />
+        app:layout_constraintTop_toBottomOf="@+id/email_aluno" />
 
     <EditText
         android:id="@+id/series_treino"
@@ -94,7 +94,7 @@
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nome_treino"
+        app:layout_constraintBottom_toTopOf="@+id/email_aluno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
@@ -114,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Peso_treino" />
 
     <EditText
-        android:id="@+id/nome_treino"
+        android:id="@+id/email_aluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"

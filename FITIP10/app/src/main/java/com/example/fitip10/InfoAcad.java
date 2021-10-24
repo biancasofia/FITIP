@@ -13,38 +13,35 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-public class InformacoesPerfilProfessor extends AppCompatActivity {
-
+public class InfoAcad extends AppCompatActivity {
+        TextView endereco;
+        TextView horarios;
+        TextView aulas;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    String usuarioId;
-    TextView nomeUsuario;
-    TextView sobrenome;
-
-    TextView cofef;
-    TextView email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_informacoes_perfil_professor);
+        setContentView(R.layout.activity_info_acad);
     }
 
     @Override
     protected void onStart() {
         String emailUser= FirebaseAuth.getInstance().getCurrentUser().getEmail();
-        nomeUsuario=findViewById(R.id.textnomeprof);
-        sobrenome= findViewById(R.id.textsobrenomeprof);
-        cofef = findViewById(R.id.textcofef);
-        email = findViewById(R.id.textemailprof);
-        usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        DocumentReference document = db.collection("professor").document(usuarioId);
+        endereco= findViewById(R.id.textEnderecoAcad);
+        horarios= findViewById(R.id.texthorarioacad);
+        aulas= findViewById(R.id.textaulascad);
+        String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        DocumentReference document = db.collection("users").document(usuarioId);
         document.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
                 if(documentSnapshot!=null){
-                    nomeUsuario.setText(documentSnapshot.getString("InfoPessoais.Nome"));
-                    sobrenome.setText(documentSnapshot.getString("InfoPessoais.Sobrenome"));
-                    cofef.setText(documentSnapshot.getString("InfoPessoais.COFEF"));
-                    email.setText(emailUser);
+                    endereco.setText(documentSnapshot.getString("InfoAcad.enderecoacad"));
+                    horarios.setText(documentSnapshot.getString("InfoAcad.horariosacad"));
+                    aulas.setText(documentSnapshot.getString("InfoAcad.aulas"));
+
+
                 }
 
             }
@@ -52,6 +49,7 @@ public class InformacoesPerfilProfessor extends AppCompatActivity {
 
         super.onStart();
     }
+
 
 
 

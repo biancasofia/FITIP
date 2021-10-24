@@ -45,6 +45,10 @@ public class InformacoesPessoais extends AppCompatActivity {
                 String registarsobrenome = sobrenome.getText().toString().trim();
                 String registrartelefone= telefone.getText().toString().trim();
                 String registarendereco = endereco.getText().toString().trim();
+                String registrarenderecoacademia ="Brasilia,305 Asa Sul";
+                String horariosFuncionamento= "Essa academia funciona de segunda a sexta de 5h as 22h e sabado de 6h as 13h";
+                String aulas ="Aulas de dança todas as quartas de 19h as 20h";
+
 
                 //    if(!TextUtils.isEmpty(registarnome)|| !TextUtils.isEmpty(registarsobrenome) ||
                 //     !TextUtils.isEmpty(registrartelefone) || !TextUtils.isEmpty(registarendereco)){
@@ -54,11 +58,18 @@ public class InformacoesPessoais extends AppCompatActivity {
                 Map<String, Object> nestedData = new HashMap<>();
                 Map<String, Object> DiaSemana = new HashMap<>();
                 Map<String, Object> InfTreino = new HashMap<>();
+                Map<String, Object> InfAcad = new HashMap<>();
+
+
 
                 nestedData.put("Nome", registarnome);
                 nestedData.put("Sobrenome", registarsobrenome);
                 nestedData.put("Telefone", registrartelefone);
                 nestedData.put("Endereco", registarendereco);
+                InfAcad.put("enderecoacad", registrarenderecoacademia);
+                InfAcad.put("horariosacad", horariosFuncionamento);
+                InfAcad.put("aulas", aulas);
+
 
 
                 DiaSemana.put("Treino", "null");
@@ -75,6 +86,7 @@ public class InformacoesPessoais extends AppCompatActivity {
 
                 docData.put("InfoPessoais", nestedData);
                 docData.put("Treinos", InfTreino);
+                docData.put("InfoAcad", InfAcad);
 
                 db.collection("users").document(usario_key)
                         .set(docData)

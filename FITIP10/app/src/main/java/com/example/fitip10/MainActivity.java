@@ -16,12 +16,12 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.*;
 
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private Button btn_logout;
-
 
 
     @Override
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
-
+            
 
 
 
@@ -71,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
         if(  item.getItemId()==R.id.navigation_info_perfil){
             Intent intent = new Intent(this, InformacoesPerfil.class);
             startActivity(intent);
+        }
+        if(item.getItemId()==R.id.navigation_info_acad){
+
+
+
+            Intent intent = new Intent(MainActivity.this, InfoAcad.class);
+            startActivity(intent);
+            finish();
+
         }
 
         if(item.getItemId()==R.id.navigation_sair){

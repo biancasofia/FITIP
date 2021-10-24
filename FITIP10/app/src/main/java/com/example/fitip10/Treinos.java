@@ -19,12 +19,16 @@ public class Treinos extends AppCompatActivity {
     private String nomeProfessor;
     private Button cadastrarTreino;
 
+
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treinos);
+
+
 
         series = findViewById(R.id.series_treino);
         repeticoes = findViewById(R.id.repeticoes_treino);
