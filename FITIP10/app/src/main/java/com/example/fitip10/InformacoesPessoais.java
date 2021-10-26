@@ -73,6 +73,9 @@ public class InformacoesPessoais extends AppCompatActivity {
 
 
                 DiaSemana.put("Treino", "null");
+                DiaSemana.put("SerieRepeticoes", "null");
+                DiaSemana.put("Exercicio", "null");
+                DiaSemana.put("Peso", "null");
 
 
 

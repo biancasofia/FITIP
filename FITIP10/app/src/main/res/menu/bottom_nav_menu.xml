@@ -14,6 +14,14 @@
         android:id="@+id/navigation_info_acad"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="Sobre a academia" />
+    <item
+        android:id="@+id/navigation_cadastrarTreino"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Cadastrar ou Editar Treino" />
+    <item
+        android:id="@+id/navigation_editar"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Adicionar exercicio" />
 
     <item
         android:id="@+id/navigation_excluir"
