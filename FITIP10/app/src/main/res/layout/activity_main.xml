@@ -11,134 +11,137 @@
     <ListView
         android:id="@+id/listTreino"
         style="@style/Theme.FITIP10"
-        android:layout_width="81dp"
-        android:layout_height="563dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
         android:background="#00BEC7E8"
         android:cacheColorHint="@color/black"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/listExercicio"
         app:layout_constraintEnd_toStartOf="@+id/listExercicio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="@+id/listExercicio" />
 
     <ListView
         android:id="@+id/listExercicio"
         android:layout_width="0dp"
-        android:layout_height="564dp"
-        android:layout_marginTop="1dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="1dp"
-        android:cacheColorHint="@color/black"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/listSerie"
-        app:layout_constraintStart_toEndOf="@+id/listTreino"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <ListView
-        android:id="@+id/listPeso"
-        android:layout_width="83dp"
-        android:layout_height="562dp"
         android:cacheColorHint="@color/black"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/listSerie"
+        app:layout_constraintEnd_toStartOf="@+id/listSerie"
+        app:layout_constraintStart_toEndOf="@+id/listTreino"
+        app:layout_constraintTop_toTopOf="@+id/listSerie" />
+
+    <ListView
+        android:id="@+id/listPeso"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:cacheColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/listDia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/listDia"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ListView
         android:id="@+id/listSerie"
-        android:layout_width="75dp"
-        android:layout_height="564dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="2dp"
         android:layout_marginBottom="1dp"
         android:cacheColorHint="@color/black"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/listExercicio"
+        app:layout_constraintBottom_toBottomOf="@+id/listDia"
         app:layout_constraintEnd_toStartOf="@+id/listDia"
         app:layout_constraintStart_toEndOf="@+id/listExercicio"
-        app:layout_constraintTop_toTopOf="@+id/listDia" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginBottom="17dp"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginBottom="3dp"
         android:text="Treino"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
+        app:layout_constraintBottom_toTopOf="@+id/listTreino"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="2dp"
         android:text="Exercicio"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/listExercicio"
-        app:layout_constraintStart_toStartOf="@+id/listExercicio" />
+        app:layout_constraintEnd_toEndOf="@+id/listExercicio" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:text="Serie e repetiçao"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="2dp"
+        android:text="Serie"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/listExercicio"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintBottom_toTopOf="@+id/listSerie"
+        app:layout_constraintStart_toStartOf="@+id/listSerie" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="28dp"
         android:text="Peso"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/listPeso"
-        app:layout_constraintTop_toTopOf="@+id/textView8" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/listDia"
-        android:layout_width="82dp"
+        android:layout_width="0dp"
         android:layout_height="564dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
         android:cacheColorHint="@color/black"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/listExercicio"
         app:layout_constraintEnd_toStartOf="@+id/listPeso"
         app:layout_constraintStart_toEndOf="@+id/listSerie"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="4dp"
         android:text="Dia"
         android:textColor="@color/black"
         android:textSize="14sp"

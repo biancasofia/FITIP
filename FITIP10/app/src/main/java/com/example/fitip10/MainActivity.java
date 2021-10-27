@@ -620,12 +620,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+
         if(  item.getItemId()==R.id.navigation_info_perfil){
             Intent intent = new Intent(this, InformacoesPerfil.class);
             startActivity(intent);
         }
 
         if(  item.getItemId()==R.id.navigation_cadastrarTreino){
+            Intent intent = new Intent(this, Treinos.class);
+            startActivity(intent);
+        }
+        if(  item.getItemId()==R.id.navigation_editar){
             Intent intent = new Intent(this, Treinos.class);
             startActivity(intent);
         }
