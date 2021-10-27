@@ -13,12 +13,47 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string-array name="dias">
-        <item>Segunda</item>
-        <item>Terça</item>
-        <item> Quarta</item>
-        <item>Quinta</item>
-        <item>Sexta</item>
-        <item>Sabado</item>
+        <item>Segunda 1</item>
+        <item>Terça 1</item>
+        <item> Quarta 1</item>
+        <item>Quinta 1</item>
+        <item>Sexta 1</item>
+        <item>Sabado 1</item>
+
+        <item>Segunda 2</item>
+        <item>Terça 2</item>
+        <item> Quarta 2</item>
+        <item>Quinta 2</item>
+        <item>Sexta 2</item>
+        <item>Sabado 2</item>
+
+        <item>Segunda 3</item>
+        <item>Terça 3</item>
+        <item> Quarta 3</item>
+        <item>Quinta 3</item>
+        <item>Sexta 3</item>
+        <item>Sabado 3</item>
+
+        <item>Segunda 4</item>
+        <item>Terça 4</item>
+        <item> Quarta 4</item>
+        <item>Quinta 4</item>
+        <item>Sexta 4</item>
+        <item>Sabado 4</item>
+
+        <item>Segunda 5</item>
+        <item>Terça 5</item>
+        <item> Quarta 5</item>
+        <item>Quinta 5</item>
+        <item>Sexta 5</item>
+        <item>Sabado 5</item>
+
+        <item>Segunda 6</item>
+        <item>Terça 6</item>
+        <item> Quarta 6</item>
+        <item>Quinta 6</item>
+        <item>Sexta 6</item>
+        <item>Sabado 6</item>
 
 
     </string-array>

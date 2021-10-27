@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 imprimeTela();
                             dias.add("Terca");
-                            pesos.add(snapshot.get("Treinos.Terca.Peso").toString());
+                           pesos.add(snapshot.get("Treinos.Terca.Peso").toString());
                             series.add(snapshot.get("Treinos.Terca.SerieRepeticoes").toString());
                             treinos.add(snapshot.get("Treinos.Terca.Treino").toString());
                             exercicios.add(snapshot.get("Treinos.Terca.Exercicio").toString());
@@ -119,7 +119,434 @@ public class MainActivity extends AppCompatActivity {
                             exercicios.add(snapshot.get("Treinos.Sabado.Exercicio").toString());
 
                             imprimeTela();
+                            dias.add("Segunda2");
 
+                            pesos.add(snapshot.get("Treinos.Segunda2.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Segunda2.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Segunda2.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Segunda2.Exercicio").toString());
+
+
+
+
+
+                            imprimeTela();
+
+                            dias.add("Terca2");
+
+                            pesos.add(snapshot.get("Treinos.Terca2.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Terca2.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Terca2.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Terca2.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quarta2");
+
+                            pesos.add(snapshot.get("Treinos.Quarta2.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quarta2.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quarta2.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quarta2.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quinta2");
+
+                            pesos.add(snapshot.get("Treinos.Quinta2.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quinta2.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quinta2.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quinta2.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sexta2");
+
+                            pesos.add(snapshot.get("Treinos.Sexta2.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sexta2.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sexta2.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sexta2.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sabado2");
+
+                            pesos.add(snapshot.get("Treinos.Sabado2.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sabado2.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sabado2.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sabado2.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+
+                            dias.add("Segunda3");
+                            pesos.add(snapshot.get("Treinos.Segunda3.Peso").toString());
+                            series.add(snapshot.get("Treinos.Segunda3.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Segunda3.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Segunda3.Exercicio").toString());
+
+
+                            imprimeTela();
+                            dias.add("Terca3");
+                            pesos.add(snapshot.get("Treinos.Terca3.Peso").toString());
+                            series.add(snapshot.get("Treinos.Terca3.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Terca3.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Terca3.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Quarta3");
+                            pesos.add(snapshot.get("Treinos.Quarta3.Peso").toString());
+                            series.add(snapshot.get("Treinos.Quarta3.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Quarta3.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Quarta3.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Quinta3");
+                            pesos.add(snapshot.get("Treinos.Quinta3.Peso").toString());
+                            series.add(snapshot.get("Treinos.Quinta3.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Quinta3.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Quinta3.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Sexta3");
+                            pesos.add(snapshot.get("Treinos.Sexta3.Peso").toString());
+                            series.add(snapshot.get("Treinos.Sexta3.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Sexta3.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Sexta3.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Sabado3");
+                            pesos.add(snapshot.get("Treinos.Sabado3.Peso").toString());
+                            series.add(snapshot.get("Treinos.Sabado3.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Sabado3.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Sabado3.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Segunda4");
+                            pesos.add(snapshot.get("Treinos.Segunda4.Peso").toString());
+                            series.add(snapshot.get("Treinos.Segunda4.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Segunda4.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Segunda4.Exercicio").toString());
+
+
+                            imprimeTela();
+                            dias.add("Terca4");
+                            pesos.add(snapshot.get("Treinos.Terca4.Peso").toString());
+                            series.add(snapshot.get("Treinos.Terca4.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Terca4.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Terca4.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Quarta4");
+                            pesos.add(snapshot.get("Treinos.Quarta4.Peso").toString());
+                            series.add(snapshot.get("Treinos.Quarta4.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Quarta4.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Quarta4.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Quinta4");
+                            pesos.add(snapshot.get("Treinos.Quinta4.Peso").toString());
+                            series.add(snapshot.get("Treinos.Quinta4.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Quinta4.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Quinta4.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Sexta4");
+                            pesos.add(snapshot.get("Treinos.Sexta4.Peso").toString());
+                            series.add(snapshot.get("Treinos.Sexta4.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Sexta4.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Sexta4.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Sabado4");
+                            pesos.add(snapshot.get("Treinos.Sabado4.Peso").toString());
+                            series.add(snapshot.get("Treinos.Sabado4.SerieRepeticoes").toString());
+                            treinos.add(snapshot.get("Treinos.Sabado4.Treino").toString());
+                            exercicios.add(snapshot.get("Treinos.Sabado4.Exercicio").toString());
+
+                            imprimeTela();
+                            dias.add("Segunda5");
+
+                            pesos.add(snapshot.get("Treinos.Segunda5.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Segunda5.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Segunda5.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Segunda5.Exercicio").toString());
+
+
+
+
+
+                            imprimeTela();
+
+                            dias.add("Terca5");
+
+                            pesos.add(snapshot.get("Treinos.Terca5.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Terca5.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Terca5.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Terca5.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quarta5");
+
+                            pesos.add(snapshot.get("Treinos.Quarta5.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quarta5.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quarta5.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quarta5.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quinta5");
+
+                            pesos.add(snapshot.get("Treinos.Quinta5.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quinta5.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quinta5.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quinta5.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sexta5");
+
+                            pesos.add(snapshot.get("Treinos.Sexta5.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sexta5.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sexta5.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sexta5.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sabado5");
+
+                            pesos.add(snapshot.get("Treinos.Sabado5.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sabado5.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sabado5.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sabado5.Exercicio").toString());
+
+
+
+                            imprimeTela();
+                         dias.add("Segunda6");
+
+                            pesos.add(snapshot.get("Treinos.Segunda6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Segunda6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Segunda6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Segunda6.Exercicio").toString());
+
+
+
+
+
+                            imprimeTela();
+
+                            dias.add("Terca6");
+
+                            pesos.add(snapshot.get("Treinos.Terca6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Terca6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Terca6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Terca6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quarta6");
+
+                            pesos.add(snapshot.get("Treinos.Quarta6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quarta6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quarta6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quarta6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quinta6");
+
+                            pesos.add(snapshot.get("Treinos.Quinta6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quinta6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quinta6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quinta6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sexta6");
+
+                            pesos.add(snapshot.get("Treinos.Sexta6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sexta6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sexta6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sexta6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sabado6");
+
+                            pesos.add(snapshot.get("Treinos.Sabado6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sabado6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sabado6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sabado6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+                            dias.add("Segunda6");
+
+                            pesos.add(snapshot.get("Treinos.Segunda6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Segunda6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Segunda6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Segunda6.Exercicio").toString());
+
+
+
+
+
+                            imprimeTela();
+
+                            dias.add("Terca6");
+
+                            pesos.add(snapshot.get("Treinos.Terca6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Terca6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Terca6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Terca6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quarta6");
+
+                            pesos.add(snapshot.get("Treinos.Quarta6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quarta6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quarta6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quarta6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Quinta6");
+
+                            pesos.add(snapshot.get("Treinos.Quinta6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Quinta6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Quinta6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Quinta6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sexta6");
+
+                            pesos.add(snapshot.get("Treinos.Sexta6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sexta6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sexta6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sexta6.Exercicio").toString());
+
+
+
+                            imprimeTela();
+
+                            dias.add("Sabado6");
+
+                            pesos.add(snapshot.get("Treinos.Sabado6.Peso").toString());
+
+                            series.add(snapshot.get("Treinos.Sabado6.SerieRepeticoes").toString());
+
+                            treinos.add(snapshot.get("Treinos.Sabado6.Treino").toString());
+
+                            exercicios.add(snapshot.get("Treinos.Sabado6.Exercicio").toString());
+
+
+
+                            imprimeTela();
 
 
 
